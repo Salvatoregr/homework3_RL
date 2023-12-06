@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="circular_object">
+    <link name="link">
+      <inertial>
+        <pose>1 -0.5 0.6 0 1.57 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>3.7499999999999997e-06</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>1.8750008333333333e-06</iyy>
+          <iyz>0.0</iyz>
+          <izz>1.8750008333333333e-06</izz>
+        </inertia>
+      </inertial>
+      <visual name="front_visual">
+        <pose>1 -0.5 0.6 0 1.57 0</pose>
+        <geometry>
+          <cylinder>
+           <radius>0.15</radius> 
+           <length>0.1</length>
+           </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.1 0.1 0.1 1</ambient>
+          <diffuse>0.1 0.1 0.5 1</diffuse>
+          <specular>0 0 0 0</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+      </visual>
+      <collision name="collision">
+        <pose>1 -0.5 0.6 0 1.57 0</pose>
+        <geometry>
+          <cylinder>
+           <radius>0.15</radius> 
+           <length>0.01</length>
+           </cylinder>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
